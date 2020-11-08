@@ -1,0 +1,4 @@
+#!/bin/sh
+
+exec 0<brev
+tr '[a-z]' '[A-Z]'

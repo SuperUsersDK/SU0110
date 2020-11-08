@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# NAME
+#    konverter - konverterer en tekststreng ...
+#
+# SYNOPSIS
+#    konverter [ -u | -l | -f ] streng
+#    -u   konverterer streng til uppercase
+#    -l   konverterer streng til lowercase
+#    -f   konverterer streng til stort beg.bogstav og
+#         resten af strengen til lowercase
+#
+# EVT. RETURN VALUE
+#    0    Successfuld afslutning
+#    1    Fejlbrug (Usage error)
+#
+############################################################
+
+Goer scriptet faerdigt :-)
