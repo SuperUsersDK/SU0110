@@ -104,9 +104,24 @@ fi
 **Opgave 1.8**
 
 ```bash
-if [ ! -f tal ]
+FIL=/home/bruger/labs/01-shell/tal
+
+if [ ! -f $FIL ]
 then
-  
+  echo "Der findes ikke en alm. $FIL"
+  exit 1
+fi
+
+TAL=$(head -1 $FIL)
+ORD=$(tail -1 $FIL)
+
+if [ "$TAL" -eq 1823 -o "$ORD" = "Adam" ]
+then
+  head -10 $FIL | tail -8 > yndigtland
+else
+  echo Betingelserne er ikke opfyldt
+  exit 1
+fi
 ```
 
 **Opgave 1.9**
