@@ -154,7 +154,7 @@ sed '$s/hund/kat/g' dyr
 sed '6,9s/hund/hest/g' dyr
 ```
 
-**SED.3***
+**SED.3**
 ```bash
 sed -e '5s/hest/fugl/' -e 's/fugl hest/UNIKORN/' dyr
 ```
