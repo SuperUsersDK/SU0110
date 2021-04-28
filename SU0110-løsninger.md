@@ -141,4 +141,26 @@ done
 cat ../dir-b/* > ../Kontrolfil
 ```
 
+**SED.1**
+```bash
+sed 's/hund/kat/g' dyr
+```
+
+**SED.2**
+```bash
+sed 's/hund/kat/g' dyr
+sed '3s/hund/kat/g' dyr
+sed '$s/hund/kat/g' dyr
+sed '6,9s/hund/hest/g' dyr
+```
+
+**SED.3***
+```bash
+sed -e '5s/hest/fugl/' -e 's/fugl hest/UNIKORN/' dyr
+```
+
+**SED.4**
+```bash
+sed '2,/hest/d' dyr
+```
 
